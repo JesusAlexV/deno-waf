@@ -15,7 +15,7 @@ const getParam = (url, param) => {
 }
 
 const waf: Function = (config: WafConfig) => async (ctx: any, next: any): Promise<void> => {
-  // Validate parameters
+  // Validate parameters!
   if (!config.parameters) {
     config.parameters = [];
   }
